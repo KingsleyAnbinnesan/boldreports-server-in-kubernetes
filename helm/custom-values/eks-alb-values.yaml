@@ -38,20 +38,20 @@ ociStorage:
   # OCI secret key for authentication (e.g., your OCI user secret key)
   secretKey: 
   # Type of OCI storage
-  storageType: 3
+  storageType: 4
 
 image:
   idRepo: us-docker.pkg.dev/boldreports/multi-container
   reportsRepo: us-docker.pkg.dev/boldreports/multi-container
   # Overrides the image tag whose default is the chart appVersion.
-  idTag: 14.1.12
-  reportsTag: 14.1.12
+  idTag: 14.1.18
+  reportsTag: 14.1.18
   pullPolicy: IfNotPresent
 imagePullSecrets: []
 
 versions:
   idp: "5.1.1"
-  reports: "14.1.12"
+  reports: "14.1.18"
 
 loadBalancer:
   type: alb
@@ -140,6 +140,18 @@ instanceConfig:
     memoryResourceRequests: 750Mi
   - app: bold-etl
     product: boldreports
+    replicaCount: 1
+    minReplicas: 1
+    maxReplicas: 20
+    cpuResourceRequests: 250m
+    memoryResourceRequests: 750Mi
+  - app: boldreports-ai
+    replicaCount: 1
+    minReplicas: 1
+    maxReplicas: 20
+    cpuResourceRequests: 250m
+    memoryResourceRequests: 750Mi
+  - app: boldreports-mcp
     replicaCount: 1
     minReplicas: 1
     maxReplicas: 20
