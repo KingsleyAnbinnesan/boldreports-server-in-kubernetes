@@ -36,5 +36,5 @@ else
 	kubectl set image deployment/reports-viewer-deployment reports-viewer-container=syncfusion/boldreports-viewer:$version --namespace=$namespace --record
 	kubectl set image deployment/bold-etl-deployment bold-etl-container=syncfusion/bold-etl:$version --namespace=$namespace --record
 	kubectl set image deployment/reports-ai-deployment reports-ai-container=syncfusion/boldreports-ai:$version --namespace=$namespace --record
-	kubectl set image deployment/reports-mcp-deployment reports-mcp-container=syncfusion/boldreports-mcp-server-server:$version --namespace=$namespace --record
+	kubectl set image deployment/reports-mcp-deployment reports-mcp-container=syncfusion/boldreports-mcp-server:$version --namespace=$namespace --record
 fi

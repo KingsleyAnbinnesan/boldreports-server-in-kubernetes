@@ -95,7 +95,7 @@ spec:
         {{- else if eq $service.app "reports-ai" }}
         image: "{{ $.Values.image.reportsRepo }}/boldreports-ai:{{ $.Values.image.reportsTag }}"
         {{- else if eq $service.app "reports-mcp" }}
-        image: "{{ $.Values.image.reportsRepo }}/boldreports-mcp-server-server:{{ $.Values.image.reportsTag }}"
+        image: "{{ $.Values.image.reportsRepo }}/boldreports-mcp-server:{{ $.Values.image.reportsTag }}"
         {{- end }}
         imagePullPolicy: Always
         ports:
