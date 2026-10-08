@@ -547,7 +547,7 @@ spec:
           name: reports-mcp-volume
       containers:
       - name: reports-mcp-container
-        image: syncfusion/boldreports-mcp:14.1.18
+        image: syncfusion/boldreports-mcp-server:14.1.18
         ports:
         - containerPort: 80
         resources:
