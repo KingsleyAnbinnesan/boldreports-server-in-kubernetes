@@ -145,7 +145,6 @@ spec:
       kind: Rule
       middlewares:
         - name: gzip-compress
-        - name: body-limit-200m
       services:
         - name: reports-ai-service
           port: 6555
