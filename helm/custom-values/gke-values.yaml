@@ -39,8 +39,8 @@ image:
   idRepo: syncfusion
   reportsRepo: syncfusion
   # Overrides the image tag whose default is the chart appVersion.
-  idTag: 14.1.18
-  reportsTag: 14.1.18
+  idTag: 15.1.10
+  reportsTag: 15.1.10
   pullPolicy: IfNotPresent
 imagePullSecrets: []
 

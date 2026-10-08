@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: id-web-container
-        image: syncfusion/bold-identity:14.1.18
+        image: syncfusion/bold-identity:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -73,7 +73,7 @@ spec:
           name: id-api-volume
       containers:
       - name: id-api-container
-        image: syncfusion/bold-idp-api:14.1.18
+        image: syncfusion/bold-idp-api:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -126,7 +126,7 @@ spec:
           name: id-ums-volume
       containers:
       - name: id-ums-container
-        image: syncfusion/bold-ums:14.1.18
+        image: syncfusion/bold-ums:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -179,7 +179,7 @@ spec:
           name: reports-web-volume
       containers:
       - name: reports-web-container
-        image: syncfusion/boldreports-server:14.1.18
+        image: syncfusion/boldreports-server:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -231,7 +231,7 @@ spec:
           name: reports-api-volume
       containers:
       - name: reports-api-container
-        image: syncfusion/boldreports-server-api:14.1.18
+        image: syncfusion/boldreports-server-api:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -283,7 +283,7 @@ spec:
           name: reports-jobs-volume
       containers:
       - name: reports-jobs-container
-        image: syncfusion/boldreports-server-jobs:14.1.18
+        image: syncfusion/boldreports-server-jobs:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -335,7 +335,7 @@ spec:
           name: reports-reportservice-volume
       containers:
       - name: reports-reportservice-container
-        image: syncfusion/boldreports-designer:14.1.18
+        image: syncfusion/boldreports-designer:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -387,7 +387,7 @@ spec:
           name: reports-viewer-volume
       containers:
       - name: reports-viewer-container
-        image: syncfusion/boldreports-viewer:14.1.18
+        image: syncfusion/boldreports-viewer:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -439,7 +439,7 @@ spec:
           name: bold-etl-volume
       containers:
       - name: bold-etl-container
-        image: syncfusion/bold-etl:14.1.18
+        image: syncfusion/bold-etl:15.1.10
         ports:
         - containerPort: 80
         env:
@@ -495,7 +495,7 @@ spec:
           name: reports-ai-volume
       containers:
       - name: reports-ai-container
-        image: syncfusion/boldreports-ai:14.1.18
+        image: syncfusion/boldreports-ai:15.1.10
         ports:
         - containerPort: 80
         resources:
@@ -547,7 +547,7 @@ spec:
           name: reports-mcp-volume
       containers:
       - name: reports-mcp-container
-        image: syncfusion/boldreports-mcp-server:14.1.18
+        image: syncfusion/boldreports-mcp-server:15.1.10
         ports:
         - containerPort: 80
         resources:
